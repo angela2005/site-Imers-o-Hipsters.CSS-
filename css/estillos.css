@@ -1,0 +1,118 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://image.freepik.com/vetores-gratis/teste-padrao-abstrato-da-caixa-de-neon-da-web-do-fundo-telas-a-tecnologia-da-projecao_115579-886.jpg');
+    background-size:auto 100vh;
+    font-family: Arial;
+    height:100vh;
+    font-size: 14px;
+  }
+  
+  
+@media(min-width:400px){
+    body{
+      font-size: 15px;
+    }
+   
+   }
+ 
+   @media(min-width:600px){
+    body{
+      font-size: 18px;
+    }
+   
+   }
+   
+header{
+ height: 146vh;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+  .menu{
+    background-color:white; 
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  a{
+    text-decoration:none;
+  }
+  
+  a:hover{ 
+    text-decoration:underline;
+  }
+  .menu ul{
+    display:flex;
+    justify-content:space-around;
+  }
+  
+  .menu li{
+    list-style:none;
+    
+  }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .sub-title,
+  .title{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    line-height: 1.2em;
+
+  }
+  
+  .portifólio{
+    padding: 2em;
+    margin-bottom: 1.5em;
+    font-size: 3em;
+  }
+  .portifólio h2{
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .portifólio .grid{
+   display: grid;
+   gap: 1em;
+    grid-template-columns:240px 240px ;
+  }
+
+  @media(min-width:560px){
+    .portifólio .grid{
+      
+       grid-template-columns:240px 240px ;
+     }
+  }
+  @media(min-width:880px){
+    .portifólio .grid{
+      
+       grid-template-columns:repeat(3,240px) ;
+       justify-content: center;
+     }
+  }
+
+  .portifólio figure{
+     text-align: center;
+  }
+  
+  .imgportifolio{
+    height:180px ;
+    width: 240px;
+  }
+  @media (min-width:1200px){
+    .imgportifolio{
+      height:240px ;
+      width: 340px;
+    }
+  }
+  
